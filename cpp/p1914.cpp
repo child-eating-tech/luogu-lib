@@ -1,7 +1,7 @@
 /* https://luogu.com.cn/problem/P1914 */
 #include<bits/stdc++.h>
 using namespace std;
-void readPasswd(char,int);
+void decrypt(char,int);
 int main(){
     int num;
     char ret[1];
@@ -10,11 +10,11 @@ int main(){
     gets(ret);
     gets(passwd);
     for(int i=0;passwd[i]!='\0';i++)
-        readPasswd(passwd[i],num);
+        decrypt(passwd[i],num);
     return 0;
 }
-void readPasswd(char a,int b){
+void decrypt(char a,int b){
     char c;
-    c=(a+b)%26;
+    c=((a+b)-('a'-1))%26+('a'-1);
     cout<<c;
 }
