@@ -1,2 +1,2 @@
 # luogu-lib
-Child-Eating Technologies' https://luogu.com.cn problem library.
+Child-Eating Technologies' [luogu.com.cn](https://www.luogu.com.cn) problem library.
