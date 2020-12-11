@@ -1,8 +1,7 @@
 /* https://www.luogu.com.cn/problem/P1002 */
 #include<bits/stdc++.h>
-#define MAXN 110
-bool b[MAXN][MAXN];
-long long a[MAXN][MAXN];
+bool b[110][110];
+long long a[110][110];
 int dx[8]={2,1,-1,-2,-2,-1,1,2};
 int dy[8]={1,2,2,1,-1,-2,-2,-1};
 int n,m,x,y;
