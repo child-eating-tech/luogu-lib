@@ -1,20 +1,14 @@
 /* https://www.luogu.com.cn/problem/P1914 */
 #include<bits/stdc++.h>
 using namespace std;
-void decrypt(char,int);
 int main(){
-	int num;
-	char ret[1];
-	scanf("%d",&num);
-	char passwd[55];
-	gets(ret);
-	gets(passwd);
-	for(int i=0;passwd[i]!='\0';i++)
-		decrypt(passwd[i],num);
+	int mv;
+	char passwd[52];
+	cin>>mv>>passwd;
+	for(int i=0;i<strlen(passwd);i++){
+		if(passwd[i]+mv>=97&&passwd[i]+mv<=122) passwd[i]+=mv;
+		else passwd[i]+=mv-26;
+	}
+	cout<<passwd;
 	return 0;
-}
-void decrypt(char a,int b){
-	char c;
-	c=((a+b)-97)%26+97;
-	cout<<c;
 }
